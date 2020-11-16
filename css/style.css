@@ -1,0 +1,19 @@
+body{
+  background-color:rgb(203, 233, 203);
+}
+
+#container {
+  background-color:rgb(203, 233, 203);
+  padding: 12px;
+  margin: 12px;
+  height: 80;
+}
+.item img{
+  height: 2rem;
+  width: 200px;
+  color: aliceblue
+}
+.descrpition{
+ font-size  0.1 rem;
+
+}
