@@ -1,5 +1,101 @@
+h1{
+  color: rgb(221, 12, 47);
+  font-family:Edwardian Script ITC;
+  font-size: 3rem;
+  font:bold;
+  background-image:url("../assets/Server_images.jpg");
+  padding: 0rem, ;
+  border: solid;
+  border-radius: 1rem;
+  width: 100%;
+  height: 5rem;
+  margin: 2rem;
+  text-align: left;
+  outline: rgb(26, 18, 146);
+
+}
+#cartItem {
+  background: rgb(226, 178, 178);
+  width: 55px;
+  height: 30px;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border-color: red;
+  top: 2rem;
+}
+.categories-log select{
+  background: rgb(150, 90, 90);
+  color: red;
+  font: bold;
+  padding: 0.15rem;
+  border-radius: 0.3rem;
+  margin: 0.2re;
+}
+.categories-log{
+  color: rgb(57, 57, 231);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#ShoppingList input{
+  font-size:10px;
+  color: rgb(235, 12, 12) ;
+  background: rgb(226, 178, 178);
+  width: 55px;
+  height: 20px;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-color: red;
+}
+ 
+#space{
+  width: 3rem;
+}
+  
+.main-nav__item--cta{
+  display:flex;
+  align-content:center;
+  justify-content: center;
+  color: rgb(201, 44, 44);
+}
+
+.main-nav__item{
+
+  display:inline-block;
+  margin-right: 4rem;
+  justify-content: space-between;
+}
+
+.brand{
+  display:flex;
+  justify-content: left;
+}
+.categories{
+  color:rgb(204, 25, 25);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.65rem;
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+}
+.h3 {
+  background: rgb(243, 13, 197);
+  color: rgb(42, 5, 90);
+  padding: 2%, 2%;
+  width: 7.4rem;
+  border-radius: 1rem;
+  margin: 0.5;
+}
+.admin-container{
+  color: purple;
+  display:inline-block;
+ justify-content: center;
+}
+
 body{
-  background-color:rgb(203, 233, 203);
+  background-color: rgb(243, 170, 170);
+  background-size: cover;
+  
 }
 
 #container {
@@ -8,12 +104,28 @@ body{
   margin: 12px;
   height: 80;
 }
-.item img{
-  height: 2rem;
-  width: 200px;
-  color: aliceblue
+.server-container{
+  width: 20px;
+  padding: 2px;
+  margin: 12px;
+  background-color: rgb(201, 206, 247) ;
+  }
+ .servers-shop>img{
+width: 30%;
+  }
+.buttom-create-item{
+  width: auto;
+  border-radius: 1rem;
 }
-.descrpition{
- font-size : 0.1 rem;
-
+.item-images img {
+  /* width: 85px; */
+  border-radius: 4.5rem;
+  border-color: red;
+  margin: red;
+  background: red;
+  border-block-start-width:1rem ;
+  /* image-rendering: auto; */
+}
+.main-header img{
+  width: 10%;
 }

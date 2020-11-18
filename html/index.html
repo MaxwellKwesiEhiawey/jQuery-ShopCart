@@ -4,45 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Max Cart</title>
-<head>
+  <link rel="shortcut icon" href="../assets/Server_images.jpg">
+  <!--<link rel="stylesheet" href="">-->
+  <link rel="stylesheet" href="../css/style.css">
+
   <script src="../js/jquery-3.5.1.js"></script>
   <script src="../js/main.js"></script>
   <link rel="stylesheet" type= "text/css"href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h1>MaxCart</h1>
-  <div id="user-data"><br/div>
-    <label>Name</label>
-    <input type="text"></input><br/>
-    <label>E-mail</label>
-    <input type="text"></input<br/>
-    <input type="checkbox"></input><br/>
-    <label>Keep Sign In</label>
-  <div id="admin-container">
-    <input id="input-new-item"
-     type="text"></input><button id= "buttom-create-item">Add</button></div>
-  <div id= "container" >
-    <div class="Item">
-      <div class="name">HPE (P20174-B21)
-        HPE ProLiant DL380 G10 2U Rack Server </div>
-        <img src="../assets/DL380.jpg" alt="">
-      <div class="descrpition">High Quality Servers- 
-         1 x Xeon Silver 4210 - 32 GB RAM HDD SSD - Serial ATA/600, 12Gb/s SAS Controller - No Free Freight - 2 Processor Support - 16 MB Graphic Card - Gigabit Ethernet - 8 x SFF Bay(s) - Yes - 1 x 500 W</div>
-      <div class="price">GHc 25, 459.69</div>
-      <button> add to cart</button>
-      <button> remove from cart</button>
-      <a href="#">More info</a>
-      <div class= "more-info"></div>
-
-
+  <header class="main-header">
+    <div>    
+        </a>
+        <div class= "brand"><h1>
+          Max Cart
+        </h1></div>
+        
+        <button id="cartItem" style="font-size:0.5rem; color: rgb(224, 64, 85);">cart 0 <i class="fa fa-shopping-cart">*view cart</i></button>
+        <div class="item-images">
+          <img src="../assets/P11051-001-Image4.jpg"></img>
+          <img src="../assets/DL380.jpg"></img>
+          <img src="../assets/all in one .jpg"></img> 
+          <img src="../assets/server_spaghetti_4.jpg"></img>
+          <img src="../assets/desktop.jpg"></img>
+          <img src="../assets/firewall.jpg"></img>
+          <img src="../assets/images_stor.jpg"></img>
+          <img src="../assets/Media.jpg"></img>
+        </div> 
+        
+    </nav>
     </div>
-  </div>
-
+    <div>
+    
+      <form action="index.html" class="categories-log">
+        <label for="categ">categories:</label>
+        <select id="categ">
+            <option value="systems">Systems</option>
+            <option value="network">Network</option>
+            <option value="storages">Storage</option>
+        </select>
+    </div>
+    
+    <nav class="main-nav">
+        <ul class="main-nav__items">
+            <li class="main-nav__item">
+                <a href="servers.html">Systems</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="customers/index.html">Network</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cta">
+                <a href="storage/index.html">Storage</a>
+            </li>
+        </ul>
+        
+</header>
+  
+  
+<div class= "categories">
+  
   <div>
     <p>System</p>
     <ul>
       <li>
-        <a href="#"> Servers</a>
+        <a href="servers.html"> Servers</a>
       </li>
       <li>
         <a href="#">Desktop</a>
@@ -52,37 +78,34 @@
       </li>
     </ul>
   </div>
-  
-</div>
-</div>
-
-<div>
-  <p>Network</p>
-  <ul>
-    <li>
-      <a href="#">Network Interface Cardsarebone</a>
-    </li>
-    <li>
-      <a href="#">Network Security & Firewalls</a>
-    </li>
-    <li>
-      <a href="#">Network Time Servers</a>
-    </li>
-  </ul>
-</div>
-<div>
-  <p>Storage</p>
-  <ul>
-    <li>
-      <a href="#">Flash Devices</a>
-    </li>
-    <li>
-      <a href="#">Hard Drive Duplicators</a>
-    </li>
-    <li>
-      <a href="#">Storage Systems</a>
-    </li>
-  </ul>
+  <div>
+    <p>Network</p>
+    <ul>
+      <li>
+        <a href="#">Network Interface Cardsarebone</a>
+      </li>
+      <li>
+        <a href="#">Network Security & Firewalls</a>
+      </li>
+      <li>
+        <a href="#">Network Time Servers</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <p>Storage</p>
+    <ul>
+      <li>
+        <a href="#">Flash Devices</a>
+      </li>
+      <li>
+        <a href="#">Hard Drive Duplicators</a>
+      </li>
+      <li>
+        <a href="#">Storage Systems</a>
+      </li>
+    </ul>
+  </div>
 </div>
   
 </body>
