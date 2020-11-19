@@ -93,7 +93,7 @@ h1{
 }
 
 body{
-  background-color: rgb(243, 170, 170);
+  background: rgb(240, 215, 223);
   background-size: cover;
   
 }
@@ -128,4 +128,41 @@ width: 30%;
 }
 .main-header img{
   width: 10%;
+}
+#server-container{
+  display: inline-block;
+  margin: 2rem;
+  align-items: center;
+  padding: 1rem;
+}
+#server-container .name{
+  color:rgb(92, 81, 247);
+  font:bold;
+  font-size: 0.7rem;
+align-items:center;
+padding: 1rem;
+
+
+}
+#server-container img{
+  width: 5rem;
+  border-radius: 1rem;
+}
+#server-container .description{
+font-size: 0.8rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#server-container .price{
+  font-size: 0.7rem;
+  color:rgb(233, 13, 13);
+  font-family: Cambria 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+  #server-container #addToCart{
+    font-size: 0.6rem;
+  border-radius: 0.5rem;
+background:rgb(226, 202, 202);
+border-color: red;}
+#server-container a{
+  font-size: 0.6rem;
+  color: blue;
 }
