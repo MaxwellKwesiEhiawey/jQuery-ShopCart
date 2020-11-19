@@ -15,18 +15,24 @@ $(document).ready(function(){
     for (i = 0; i < li.length; i++) {
       ul.on("click",'.add', function(e) {
         e.stopImmediatePropagation();
-        console.log($(this).closest("li").index(),"add");
-        cartObj[$(this).closest("li").attr('id')].qty++;
+        console.log($(this).closest("li").find(".box").val(),"add");
+        var boxInput = $(this).closest("li").find(".box").val();
+        console.log("boxIput", boxInput);
+        if ( boxInput >=0 && boxInput!=="") cartObj[$(this).closest("li").attr('id')].qty = boxInput;
+        // cartObj[$(this).closest("li").attr('id')].qty++;
         calAmt(cartObj);
         genItems(cartObj,ul);
       });
-      ul.on("click",'.remove', function(e) {
-        e.stopImmediatePropagation();
-        console.log($(this).closest("li").index(),"remove");
-        cartObj[$(this).closest("li").attr('id')].qty--;
-        calAmt(cartObj);
-        genItems(cartObj,ul);
-      });
+      // ul.on("click",'.remove', function(e) {
+      //   e.stopImmediatePropagation();
+      //   console.log($(this).closest("li").index(),"remove");
+      //   var content = cartObj[$(this).closest("li").attr('id')].qty; 
+      //   if (content >0){ content--;
+      //     cartObj[$(this).closest("li").attr('id')].qty = content
+      //   };
+      //   calAmt(cartObj);
+      //   genItems(cartObj,ul);
+      // });
     }
   }
 })
@@ -44,9 +50,11 @@ function genItems(obj,ul){
   ul.empty();
   for(var key of Object.keys(obj)){
     $('<li>').attr('id',key).text(key.replaceAll('_'," "))
-    .append($('<span>').text(`Qty: ${obj[key].qty}`))
-    .append($('<button>').attr('class','add').text("+"))
-    .append($('<button>').attr('class','remove').text("-"))
+    .append($('<span>').text(`Qty: `))
+    .append($("<input>").attr('type','number').attr("class","box").attr("value",`${obj[key].qty}`).attr("min","0"))
+    .append($('<button>').attr('class','add').text("add"))
+    // .append($('<button>').attr('class','add').text("+"))
+    // .append($('<button>').attr('class','remove').text("-"))
     .appendTo(ul)
   }
 }

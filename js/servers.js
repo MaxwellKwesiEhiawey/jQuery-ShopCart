@@ -24,8 +24,12 @@ $(document).ready(function(){
     }
     localStorage.setItem('cartItem',JSON.stringify(newCartItem));
    }
-   $('#cartItem').text((cartItem === null)? 0: Object.keys(JSON.parse(cartItem)).length);
+   $('#cartItem').text((cartItem === null)? 0: Object.keys(JSON.parse(cartItem)).length)
   }
   )
-  
+  $("#cartItem").click(function(event){
+    event.preventDefault();
+      console.log("cartItem button click");
+        window.location.href="../html/check_out.html";
+      })
 })
